@@ -1,0 +1,27 @@
+<%- include ('./partials/header.ejs') %> <!--importando partials com EJS-->
+<%- include ('./partials/navbar.ejs') %> 
+
+<body>
+
+    <div class="container">
+        <hr>
+        <h1>Tem alguma dúvida ?</h1>
+        
+        <a href="/ask" class="btn btn-primary" style="float:right; margin-top: -7vh; margin-right: 80vh;">Perguntar</a>
+        <% perguntas.forEach(pergunta => { %>
+            <br>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h3><%= pergunta.titulo %></h3>
+                </div>
+                <div class="card-footer"> <!--botao com links dinamicos com o id da pergunta-->
+                   <a href="/question/<%= pergunta.id %>"><button class="btn btn-primary" style="float:right;">Responder</button></a>
+                </div>
+            </div>
+            <br>
+        <% }) %>
+    </div>
+
+</body>
+<%- include('./partials/footer.ejs') %>
