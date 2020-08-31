@@ -6,13 +6,16 @@ Question é uma plataforma de perguntas e respostas que foi criada com o intuito
 ## 💻 Como rodar o projeto:
 Após baixar o projeto, acesse ele via seu terminal e execute os comandos:
 
- 'nodemon index.js'
+```
+ nodemon index.js
+ ```
 
 ⚠️ Para evitar erros, é de extrema importância que seu banco de dados esteja ativo e declarado na pasta "database" do projeto, no arquivo "database.js". Dessa forma, o projeto irá se conectar ao seu banco de dados. 
 
 ### Para executar o projeto no navegador:
-
-'localhost:8080'
+```
+localhost:8080
+```
 
 ## ✔️ Resultados visuais:
 
